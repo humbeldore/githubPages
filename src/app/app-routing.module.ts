@@ -14,6 +14,10 @@ const routes: Routes = [
         path: 'gewicht',
         pathMatch: 'full',
         component: AppWeightComponent
+    },
+    {
+        path: '**',
+        component: AppShopComponent
     }
 ];
 
