@@ -31,3 +31,23 @@
 .video {
     width: 50%;
 }
+
+@media only screen and (max-width: 1366px) {
+    :host {
+        padding: 10px;
+    }
+
+    .content {
+        p {
+            width: 80%;
+        }
+
+        .action-button {
+            width: 80%;
+        }
+    }
+    
+    video {
+        width: 100%;
+    }
+}
