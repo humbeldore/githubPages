@@ -1,0 +1,33 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 50px;
+}
+
+.content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        width: 70%;
+    }
+
+    .action-button {
+        width: 50%;
+        height: 50px;
+        border: 1px solid;
+        border-radius: 3px;
+    }
+
+    :nth-child(1n + 1) {
+        margin-bottom: 20px;
+    }
+}
+
+.video {
+    width: 50%;
+}
