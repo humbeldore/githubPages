@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { AppWeightComponent } from './weight.component';
-import { NgbModule, NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
+import { CommonModule } from '@angular/common';
+import { SliderCarouselModule } from 'slider-carousel';
 
 @NgModule({
     imports: [
-        NgbModule,
-        NgbPaginationModule,
-        NgbAlertModule
+        CommonModule,
+        SliderCarouselModule
     ],
     declarations: [
         AppWeightComponent

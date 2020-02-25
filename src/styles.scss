@@ -2,3 +2,8 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import './src/slider-carousel/slider-carousel.scss';
+$color: #009688;
+$bg: #FFF;
+@include slider-carousel($color, $bg);
