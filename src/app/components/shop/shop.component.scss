@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    padding: 50px;
 }
 
 .content {
@@ -26,16 +25,32 @@
     :nth-child(1n + 1) {
         margin-bottom: 20px;
     }
-}
 
-.video {
-    width: 50%;
+    .icon-content {
+        display: flex;
+        flex: 1 1 auto;
+        height: 10em;
+        justify-content: center;
+    }
+
+    .icon {
+        font-size: 10em;
+        display: flex;
+        flex: 1 1 auto;
+        height: 1em;
+        justify-content: center;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 1366px) {
-    :host {
-        padding: 10px;
-    }
 
     .content {
         p {
@@ -45,9 +60,5 @@
         .action-button {
             width: 80%;
         }
-    }
-    
-    video {
-        width: 100%;
     }
 }

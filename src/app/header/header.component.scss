@@ -1,0 +1,33 @@
+:host {
+    p {
+        font-weight: 500;
+        font-size: 1.3em;
+    }
+}
+
+.background {
+    height: 600px;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 517px;
+    margin-top: 50px;
+    font-size: 1.7em;
+    background-color: rgba(#FFD562, 0.92);
+}
+
+.big-font {
+    font-weight: 600;
+    font-size: 1.5em;
+}

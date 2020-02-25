@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Pipe } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,7 +9,7 @@ import { AppShopModule } from './components/shop/shop.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -19,7 +19,7 @@ import { AppShopModule } from './components/shop/shop.module';
     AppWeightModule,
     AppShopModule,
   ],
-  providers: [],
+  providers: [Pipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
