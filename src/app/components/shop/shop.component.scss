@@ -18,6 +18,8 @@ app-header {
 
     p {
         width: 70%;
+        font-size: 1.2em;
+
     }
 
     .action-button {
@@ -36,7 +38,7 @@ app-header {
             flex-direction: column;
             .submit {
                 font-weight: 600;
-                font-size: 2em;
+                font-size: 1.8em;
             }
         }
     }
