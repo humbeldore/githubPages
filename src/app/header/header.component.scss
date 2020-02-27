@@ -1,4 +1,5 @@
 :host {
+    width: 100%;
     p {
         font-weight: 500;
         font-size: 1.3em;
@@ -11,6 +12,11 @@
     flex: 1 1 auto;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    background-image: url('../../assets/img/Startbild.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -500px;
 }
 
 .info-box {
@@ -23,6 +29,7 @@
     color: white;
     height: 517px;
     margin-top: 50px;
+    width: 100%;
     font-size: 1.7em;
     background-color: rgba(#FFD562, 0.92);
 }
@@ -30,4 +37,10 @@
 .big-font {
     font-weight: 600;
     font-size: 1.5em;
+}
+
+@media only screen and (max-width: 1366px) {
+    .background {
+        background-position-y: 0px;
+    }
 }

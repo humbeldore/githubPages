@@ -9,18 +9,12 @@ import { Component } from '@angular/core';
 export class AppWeightComponent {
     public currentNumber = 1;
     public example: any = null;
-    public images: string[] = [
-        'assets/img/at_01.jpg',
-        'assets/img/at_02.jpg',
-        'assets/img/at_03.jpg',
-        'assets/img/at_04.jpg',
-        'assets/img/rm_01.jpg',
-        'assets/img/rm_02.jpg',
-        'assets/img/rm_03.jpg',
-        'assets/img/rm_04.jpg',
-    ]
+    public images: string[] = [];
 
     constructor() {
+        for (let i = 1; i <= 20; i++) {
+            this.images.push(`assets/img/${i}.jpg`);
+        }
         this.selectExample(1);
     }
 

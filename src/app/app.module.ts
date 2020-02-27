@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppWeightModule } from './components/weight/weight.module';
 import { AppShopModule } from './components/shop/shop.module';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { RouterModule } from '@angular/router';
 
     AppWeightModule,
     AppShopModule,
+    HttpClientModule
   ],
   providers: [Pipe],
   bootstrap: [AppComponent]
