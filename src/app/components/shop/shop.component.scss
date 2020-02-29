@@ -16,14 +16,25 @@ app-header {
     align-items: center;
     margin-bottom: 50px;
 
-    p {
-        width: 70%;
-        font-size: 1.2em;
+    .bediff {
+        font-size: 1.8em;
+    }
 
+    p {
+        width: 100%;
+        font-size: 1.2em;
+        .title {
+            color: #1c1c1c;
+            font-weight: 600;
+        }
+        .decline {
+            color: red;
+            font-weight: 600;
+        }
     }
 
     .action-button {
-        width: 30%;
+        width: 50%;
         height: 100px;
         border: 1px solid;
         border-radius: 15px;
@@ -31,6 +42,8 @@ app-header {
         border: none;
         color: white;
         box-shadow: 0px 0px 15px #8b8b8b;
+        margin: 50px 0px;
+
         .button-content {
             display: flex;
             justify-content: center;
@@ -64,6 +77,15 @@ app-header {
         justify-content: center;
         align-items: center;
         text-align: center;
+        color: #8b8b8b;
+    }
+
+    .info-text {
+        font-weight: 600;
+    }
+
+    .text-list {
+        margin-top: 30px;
     }
 
     .list {
@@ -75,6 +97,7 @@ app-header {
                 font-size: 1.2em;
             }
         }
+        margin: 20px 0px;
         text-align: left;
     }
 }

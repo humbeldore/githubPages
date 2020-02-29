@@ -23,6 +23,6 @@ export class AppWeightComponent {
     }
 
     onNavigate() {
-        window.location.replace('https://kwerbeed.flp.de/');
+        // window.location.replace('https://kwerbeed.flp.de/');
     }
 }
