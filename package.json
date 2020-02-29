@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prod": "ng build --prod --output-path docs --base-href humbeldore/githubPages"
+    "prod": "ng build --prod --output-path docs --base-href https://humbeldore.github.io/githubPages",
+    "deploy": "ngh --dir=dist/githubPages"
   },
   "private": true,
   "dependencies": {
