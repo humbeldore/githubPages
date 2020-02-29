@@ -7,7 +7,7 @@
 }
 
 .background {
-    height: 600px;
+    height: 900px;
     display: flex;
     flex: 1 1 auto;
     justify-content: center;
@@ -27,10 +27,10 @@
     align-items: center;
     text-align: center;
     color: white;
-    height: 517px;
+    height: 600px;
     margin-top: 50px;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.8em;
     background-color: rgba(#FFD562, 0.92);
 }
 
@@ -41,6 +41,14 @@
 
 @media only screen and (max-width: 1366px) {
     .background {
+        height: 550px;
         background-position-y: 0px;
+        align-items: flex-start;
+    }
+
+    .info-box {
+        margin-top: 30px;
+        font-size: 1.5em;
+        height: 500px;
     }
 }
