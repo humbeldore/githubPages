@@ -13,7 +13,7 @@ export class AppWeightComponent {
 
     constructor() {
         for (let i = 1; i <= 20; i++) {
-            this.images.push(`assets/img/${i}.jpg`);
+            this.images.push(`./assets/img/${i}.jpg`);
         }
         this.selectExample(1);
     }
