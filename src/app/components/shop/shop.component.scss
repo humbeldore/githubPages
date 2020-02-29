@@ -78,6 +78,7 @@ app-header {
         align-items: center;
         text-align: center;
         color: #8b8b8b;
+        margin: 0px 10px;
     }
 
     .info-text {
@@ -106,7 +107,7 @@ app-header {
 
     .content {
         p {
-            width: 80%;
+            width: 100%;
         }
 
         .action-button {
