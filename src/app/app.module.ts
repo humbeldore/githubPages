@@ -1,27 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, Pipe } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
+import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppShopModule } from './components/shop/shop.module';
-import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { AppLandingPageModule } from './components/landing-page/landing-page.module';
+import { AppCoreModule } from './components/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RouterModule,
-    BrowserAnimationsModule,
-
-    AppShopModule,
-    HttpClientModule
+    AppCoreModule,
+    AppLandingPageModule,
   ],
-  providers: [Pipe],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-weight',
-    templateUrl: './weight.component.html',
-    styleUrls: ['./weight.component.scss'],
+    selector: 'app-carousel',
+    templateUrl: './carousel.component.html',
+    styleUrls: ['./carousel.component.scss'],
 })
 
-export class AppWeightComponent {
+export class AppCarouselComponent {
     public currentNumber = 1;
     public example: any = null;
     public images: string[] = [];
@@ -18,8 +18,8 @@ export class AppWeightComponent {
         this.selectExample(1);
     }
 
-    selectExample(number: number) {
-        this.currentNumber = number;
+    selectExample(currentNumber: number) {
+        this.currentNumber = currentNumber;
     }
 
     onNavigate() {
