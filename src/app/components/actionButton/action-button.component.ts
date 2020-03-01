@@ -10,9 +10,9 @@ import { Router } from '@angular/router';
 export class ActionButtonComponent {
 
     @Input() link = '/bewerben';
-    @Input() externlink = '';
-    @Input() title = 'jetzt bewerben';
-    @Input() disableSubTitle = false;
+    @Input() externlink = 'https://www.scantickets.de/events.php?id=2990';
+    @Input() title = 'jetzt Ticket sichern!';
+    @Input() disableSubTitle = true;
 
     constructor(private router: Router) {}
 
