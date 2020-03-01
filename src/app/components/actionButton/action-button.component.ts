@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-action-button',
@@ -7,5 +8,19 @@ import { Component } from '@angular/core';
 })
 
 export class ActionButtonComponent {
-    constructor() {}
+
+    @Input() link = '/bewerben';
+    @Input() externlink = '';
+    @Input() title = 'jetzt bewerben';
+    @Input() disableSubTitle = false;
+
+    constructor(private router: Router) {}
+
+    navigate() {
+        if (this.externlink.length > 0) {
+            window.location.assign(this.externlink);
+            return;
+        }
+        this.router.navigate([this.link]);
+    }
 }

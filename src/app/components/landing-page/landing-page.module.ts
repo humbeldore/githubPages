@@ -9,6 +9,7 @@ import { AppCarouselModule } from '../carousel/carousel.module';
 import { AppHeaderModule } from '../header/header.module';
 import { AppApplyModule } from '../apply/apply.module';
 import { AppCoreModule } from '../core.module';
+import { SuccessModule } from '../success/success.module';
 
 @NgModule({
     imports: [
@@ -21,6 +22,7 @@ import { AppCoreModule } from '../core.module';
         ActionButtonModule,
         AppCarouselModule,
         AppApplyModule,
+        SuccessModule,
 
         AppCoreModule
     ],

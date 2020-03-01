@@ -1,6 +1,6 @@
-<button class="action-button" routerLink="/bewerben">
+<button class="action-button" (click)="navigate()">
     <div class="button-content">
-        <span class="submit">{{ 'jetzt bewerben' | uppercase }}</span>
-        <span>Komm zum <span class="gold">{{ 'be different day' | uppercase }}</span></span>
+        <span class="submit">{{ title | uppercase }}</span>
+        <span *ngIf="!disableSubTitle">Komm zum <span class="gold">{{ 'be different day' | uppercase }}</span></span>
     </div>
 </button>

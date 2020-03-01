@@ -29,5 +29,7 @@ export class AppComponent {
     this.matIconRegistry.addSvgIcon('praxis',
     this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/AusderPraxisfürdiePraxis.svg'));
 
+    this.matIconRegistry.addSvgIcon('how_to_reg',
+    this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/how_to_reg.svg'));
   }
 }

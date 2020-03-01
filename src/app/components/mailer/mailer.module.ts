@@ -4,16 +4,19 @@ import { AppMailerComponent } from './mailer.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { SuccessComponent } from '../success/success.component';
 
 @NgModule({
     imports: [
         AppCoreModule,
         MatFormFieldModule,
         MatInputModule,
-        MatButtonModule
+        MatButtonModule,
+        MatSelectModule
     ],
     declarations: [
-        AppMailerComponent
+        AppMailerComponent,
     ],
     exports: [
         AppMailerComponent
