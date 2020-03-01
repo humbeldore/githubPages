@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from '../app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
     imports: [],
@@ -14,6 +15,8 @@ import { BrowserModule } from '@angular/platform-browser';
         RouterModule,
         BrowserAnimationsModule,
         HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule
     ],
 })
 

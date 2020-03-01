@@ -1,14 +1,20 @@
-<form id="my-form" action="https://formspree.io/mpzrdgvk" method="POST">
-  <label>
-    Your email:
-    <input type="text" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
+<div class="contact">
+    <form class="contact-form" [formGroup]="formGroup">
+        <mat-form-field class="field">
+            <input matInput placeholder="Dein Name" formControlName="name">
+            <mat-error>Pflichtfeld</mat-error>
+        </mat-form-field>
 
-  <!-- your other form fields go here -->
+        <mat-form-field class="field">
+            <input matInput placeholder="Deine Email" formControlName="email">
+            <mat-error>Ist deine Email korrekt?</mat-error>
+        </mat-form-field>
 
-  <button type="submit">Send</button>
-</form>
+        <mat-form-field class="field">
+            <textarea matInput placeholder="Warum möchtest du dich bewerben?" formControlName="message"></textarea>
+            <mat-error>Pflichtfeld</mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="processForm()" class="submit">Jetzt Bewerben</button>
+    </form>
+</div>

@@ -7,6 +7,8 @@ import { CommonModule } from '@angular/common';
 import { ActionButtonModule } from '../actionButton/action-button.module';
 import { AppCarouselModule } from '../carousel/carousel.module';
 import { AppHeaderModule } from '../header/header.module';
+import { AppApplyModule } from '../apply/apply.module';
+import { AppCoreModule } from '../core.module';
 
 @NgModule({
     imports: [
@@ -17,7 +19,10 @@ import { AppHeaderModule } from '../header/header.module';
 
         AppHeaderModule,
         ActionButtonModule,
-        AppCarouselModule
+        AppCarouselModule,
+        AppApplyModule,
+
+        AppCoreModule
     ],
     declarations: [
         AppLandingPageComponent,

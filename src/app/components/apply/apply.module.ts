@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { AppApplyComponent } from './apply.component';
+import { AppCoreModule } from '../core.module';
+import { AppMailerModule } from '../mailer/mailer.module';
 
 @NgModule({
-    imports: [],
+    imports: [
+        AppCoreModule,
+        AppMailerModule
+    ],
     declarations: [
-        AppApplyComponent
+        AppApplyComponent,
     ],
     exports: [
-        AppApplyComponent
+        AppApplyComponent,
     ]
 })
 

@@ -1,44 +1,36 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { Subject } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-mailer',
-  templateUrl: './mailer.component.html',
-  styleUrls: ['./mailer.component.scss'],
+    selector: 'app-mailer',
+    templateUrl: './mailer.component.html',
+    styleUrls: ['./mailer.component.scss'],
 })
-export class MailerComponent implements OnInit, OnDestroy {
+export class AppMailerComponent implements OnInit {
 
-  public subscribeForm: FormGroup;
-  public email: FormControl;
-  private unsubscribe = new Subject<void>();
+    formGroup: FormGroup;
+    private url = '';
 
-  constructor() { }
+    constructor(private http: HttpClient) {
+        this.formGroup = new FormGroup({
+            name: new FormControl('', Validators.required),
+            email: new FormControl('', [Validators.required, Validators.email]),
+            message: new FormControl('', Validators.required)
+        });
+    }
 
-  ngOnInit() {
-      this.createFormControls();
-      this.createForm();
-  }
+    ngOnInit() { }
 
-  createFormControls() {
-      this.email = new FormControl('', [
-          Validators.required
-      ]);
-  }
-
-  createForm() {
-      this.subscribeForm = new FormGroup({
-          email: this.email
-      });
-  }
-
-  sendMail(email) {
-    // https://script.google.com/macros/s/AKfycbwmIasPDvMPDQG41X6NLz5ZCraQ7taPk6zSO787Eg/exec
-  }
-
-  ngOnDestroy(): void {
-      this.unsubscribe.next();
-      this.unsubscribe.complete();
-  }
+    processForm() {
+        if (this.formGroup.invalid) {
+            return;
+        }
+        const data = this.formGroup.value;
+        this.http.post(`${this.url}`, { data })
+            .toPromise()
+            .then()
+            .catch();
+    }
 
 }

@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { AppHeaderComponent } from './header.component';
+import { AppCoreModule } from '../core.module';
 
 @NgModule({
-    imports: [],
+    imports: [
+        AppCoreModule
+    ],
     declarations: [
         AppHeaderComponent
     ],
