@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    flex: 1 1 auto;
+    padding: 5% 10%;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('../../../assets/img/Startbild.jpg');
+    background-position: center;
+    .header-content {
+        background-color: rgba(rgb(194, 194, 194), 0.92);
+        border-radius: 25px;
+    }
+}
+.content {
+    display: flex;
+    flex: 1 1 auto;
+    margin: 0px 10%;
+    flex-direction: column;
+}
